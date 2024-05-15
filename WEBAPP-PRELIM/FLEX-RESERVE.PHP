@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href=".BOOTSTRAP.css">
+    <link rel="stylesheet" href="BOOTSTRAP.css">
     <link rel="stylesheet" href="mod.css">
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -209,6 +209,6 @@
         ?>
     </div>
 
-<script src=".BOOTSTRAP.js"></script>
+<script src="BOOTSTRAP.js"></script>
 </body>
 </html>
