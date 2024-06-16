@@ -17,7 +17,7 @@ include '.header.html';
     <br>
     <div class="container">
         <h1>FLEX CENTER</h1><br>
-        <form method="POST" action="settings/insert_database.php" class="">
+        <form method="POST" action="database_operations/insert_database.php">
             <label for="flxroom">Room:</label>
             <select id="flxroom" name="flxroom">
                 <option value="Techflip Learning Studio">Techflip Learning Studio</option>
