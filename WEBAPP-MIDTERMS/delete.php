@@ -17,7 +17,7 @@ include '.header.html';
     <br>
     <div class="container">
         <h1>FLEX CENTER</h1><br>
-        <form method="POST" action="settings/delete_database.php">
+        <form method="POST" action="database_operations/delete_database.php">
             <label for="resid">Reserve ID:</label>
             <input type="text" id="resid" name="resid" required>
 
