@@ -1,0 +1,844 @@
+:root {
+    --ama-red: #8E0404;
+}
+html,
+body {
+    background-image: url("../../static/assets/bg.png") !important;
+    background-size: cover !important;
+    background-attachment: fixed !important;
+    background-position: center center !important;
+    width: 100%;
+    height: 100%;
+    user-select: none !important;
+    -webkit-user-select: none !important;
+    font-family: Arial, Helvetica, sans-serif !important;
+}
+.cbody {
+    width: 100% !important;
+    height: 100% !important;
+    display: flex !important;
+    flex-direction: column !important;
+}
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+input, 
+button,
+select {
+    border: none !important;
+    outline: none !important;
+}
+input[type="text"],
+input[type="password"],
+input[type="number"],
+input[type="date"],
+input[type="datetime-local"],
+input[type="email"],
+input[type="month"],
+input[type="search"],
+input[type="tel"],
+input[type="time"],
+input[type="url"],
+input[type="week"],
+select {
+    background-color: #ffffff3b !important;
+    width: 100% !important;
+    height: 43px !important;
+    padding: 0 13px !important;
+    color: white !important;
+    font-size: 15px !important;
+}
+input[disabled] {
+    color: white !important;
+}
+input::placeholder,
+select::placeholder {
+    color: white !important;
+}
+option {
+    color: var(--ama-red);
+}
+button:not(.btn-close):not(.crslbtn),
+input[type="submit"] {
+    width: 100% !important;
+    padding: 13px 0 !important;
+    font-size: 15px !important;
+    text-transform: uppercase !important;
+    line-height: normal !important;
+    text-align: center !important;
+}
+img {
+    pointer-events: none !important;
+}
+.TBMOD-HIDE {
+    display: none !important;
+}
+
+main {
+    width: 100% !important;
+    height: 100% !important;
+    display: flex !important;
+    flex-direction: column !important;
+    overflow: auto !important;
+}
+.PCMOD-body {
+    align-items: center !important;
+    padding: 13px 0 0;
+}
+.PCMOD-body > .loginpage {
+    width: 100% !important;
+    height: 100% !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    padding: 0 13px !important;
+}
+.loginpage > .loginform {
+    background-color: #d5a3a354 !important;
+    backdrop-filter: blur(23px) !important;
+    width: 500px !important;
+    height: 400px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    padding: 13px !important;
+}
+.loginpage > .loginform > .title {
+    width: 100% !important;
+    display: flex !important;
+    align-items: center !important;
+    gap: 13px !important;
+}
+.loginpage > .loginform > .title > img {
+    width: 160px !important;
+    height: 51px !important;
+}
+.loginpage > .loginform > .title > span {
+    display: flex !important;
+    color: white !important;
+    font-size: 33px !important;
+    font-family: Impact !important;
+    text-transform: uppercase !important;
+    line-height: normal !important;
+    text-align: center !important;
+}
+.loginpage > .loginform > .form {
+    width: 100% !important;
+    height: 100% !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
+.loginpage > .loginform > .form > form {
+    width: 400px !important;
+    height: 225px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 33px !important;
+}
+.loginpage > .loginform > .form > form > .inputboxes {
+    width: 100% !important;
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 23px !important;
+}
+/* .loginpage > .loginform > .form > form > .inputboxes > input:hover {
+    outline: 2px solid white !important;
+} */
+.loginpage > .loginform > .form > form > .button-a {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 23px !important;
+}
+.loginpage > .loginform > .form > form > .button-a > button {
+    background-color: var(--ama-red) !important;
+    color: white !important;
+}
+.loginpage > .loginform > .form > form > .button-a > button:hover {
+    background-color: white !important;
+    color: var(--ama-red) !important;
+}
+.loginpage > .loginform > .form > form > .button-a > a {
+    color: white !important;
+    font-size: 15px !important;
+    text-transform: capitalize !important;
+    text-decoration: none !important;
+    line-height: normal !important;
+}
+.loginpage > .loginform > .form > form > .button-a > a:hover {
+    text-decoration: underline !important;
+}
+.loginpage > .loginform > .form > form > .button-a > button:hover,
+.loginpage > .loginform > .form > form > .button-a > button:not(:hover) {
+    transition: .33s ease-in-out !important;
+}
+
+.TBMOD-header {
+    background-color: #8E0404 !important;
+    width: 100% !important;
+    z-index: 100;
+    position: sticky !important;
+    top: 0 !important;
+    box-shadow: 0px 2.3px 6.9px 0px rgba(0, 0, 0, 0.69) !important;
+}
+.TBMOD-header > .header {
+    max-width: 100% !important;
+    height: 69px !important;
+    display: flex !important;
+    justify-content: space-between !important;
+    margin-right: auto !important;
+    margin-left: auto !important;
+    padding: 9px 33px !important;
+}
+.header > .titleside {
+    display: flex !important;
+    align-items: center !important;
+    user-select: none !important;
+    -webkit-user-select: none !important;
+    pointer-events: none !important;
+    gap: 23px !important;
+}
+.header > .titleside > img {
+    width: 160px !important;
+    height: 51px !important;
+}
+.header > .titleside > span {
+    display: flex !important;
+    color: white !important;
+    font-size: 33px !important;
+    font-family: Impact !important;
+    line-height: normal !important;
+    text-align: center !important;
+}
+.header > .navside {
+    display: flex !important;
+    justify-content: flex-end !important;
+    align-items: center !important;
+}
+.header > .navside > .navitem > a {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    padding: 13px 23px !important;
+    color: white !important;
+    font-size: 18px !important;
+    text-decoration: none !important;
+    text-transform: capitalize !important;
+    line-height: normal !important;
+    text-align: center !important;
+}
+.header > .navside > .navitem > .drpdwn-menu {
+    box-shadow: 0px 2.3px 6.9px 0px #000000b0 !important;
+    border-radius: 0 !important;
+    padding: 13px !important;
+    position: absolute !important;
+    top: 9px !important;
+}
+.header > .navside > .navitem > .drpdwn-menu > .menu {
+    display: flex !important;
+    flex-direction: column !important;
+}
+.header > .navside > .navitem > .drpdwn-menu > .menu > a {
+    padding: 11.5px 23px !important;
+    color: #8E0404 !important;
+    font-size: 18px !important;
+    text-decoration: none !important;
+    text-transform: capitalize !important;
+    line-height: normal !important;
+    width: 100%;
+}
+.header > .navside > .navitem > .drpdwn-menu > .menu > a:hover {
+    background-color: var(--ama-red) !important;
+    color: white !important;
+}
+.header > .navside > .navitem > a:hover, 
+.header > .navside > .navitem > a:not(:hover),
+.header > .navside > .navitem > .drpdwn-menu > .menu > a:hover,
+.header > .navside > .navitem > .drpdwn-menu > .menu > a:not(:hover) {
+    transition: .33s ease-in-out !important;
+}
+
+.TBMOD-footer {
+    background-color: var(--ama-red) !important;
+    max-width: 100% !important;
+    display: flex !important;
+    margin-top: auto !important;
+    box-shadow: 0px 2.3px 6.9px 0px #000000b0 !important;
+}
+.TBMOD-footer > .footer {
+    max-width: 100% !important;
+    display: flex !important;
+    flex-direction: column !important;
+    margin-inline: auto !important;
+}
+.footer > .abouttheflexsection {
+    width: 100% !important;
+    height: 245px !important;
+    display: flex;
+    flex-direction: column !important;
+    justify-content: center !important;
+    padding: 40px 209px !important;
+}
+.footer > .abouttheflexsection > .title,
+.footer > .abouttheflexsection > .description,
+.footer > .visitpagessection > .title {
+    width: 100% !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center !important;
+    line-height: normal !important;
+}
+.footer > .abouttheflexsection > .title,
+.footer > .visitpagessection > .title {
+    font-size: 33px !important;
+    font-weight: bold !important;
+}
+.footer > .abouttheflexsection > .title {
+    color: #d0ba2a !important;
+}
+.footer > .abouttheflexsection > .description {
+    width: 100%;
+    height: 100%;
+    margin-block: auto !important;
+    color: white !important;
+    font-size: 23px !important;
+    text-align: center !important;
+    line-height: normal !important;
+}
+.footer > .visitpagessection {
+    background-color: white !important;
+    width: 100% !important;
+    display: flex;
+    flex-direction: column !important;
+    justify-content: center !important;
+    padding: 40px 0 0 !important;
+}
+.footer > .visitpagessection > .title {
+    color: var(--ama-red) !important;
+}
+.footer > .visitpagessection > .pages {
+    /* width: 1169px !important; */
+    height: 283px !important;
+    display: flex !important;
+}
+.footer > .rightssection {
+    width: 100% !important;
+    display: flex !important;
+    justify-content: space-between !important;
+    padding: 40px 13px !important;
+}
+.footer > .rightssection > .logoside {
+    width: 615px !important;
+    height: 130px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 13px !important;
+}
+.footer > .rightssection > .logoside > .title {
+    display: flex !important;
+    align-items: center !important;
+    gap: 23px !important;
+    overflow: hidden;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+.footer > .rightssection > .logoside > .title > img {
+    width: 265px !important;
+    height: 85px !important;
+}
+.footer > .rightssection > .logoside > .title > span {
+    display: flex !important;
+    color: white !important;
+    font-size: 66px !important;
+    font-family: Impact !important;
+    text-transform: uppercase !important;
+    line-height: normal !important;
+    text-align: center !important;
+    overflow: hidden;
+    -webkit-line-clamp: 21;
+    -webkit-box-orient: vertical;
+}
+.footer > .rightssection > .logoside > span {
+    color: white !important;
+    font-size: 18.23px !important;
+    line-height: normal !important;
+    text-align: center !important;
+}
+.footer > .rightssection > .allrightsside {
+    width: 615px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 13px;
+}
+.footer > .rightssection > .allrightsside > span {
+    color: white !important;
+    font-size: 23px;
+    line-height: normal;
+    text-align: center;
+}
+.homepage,
+.formpage,
+.selecttimedatepage,
+.selectroompage {
+    gap: 23px !important;
+}
+.homepage > .pagecontent {
+    width: 100% !important;
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 33px !important;
+    margin-inline: auto !important;
+    padding: 0 13px !important;
+}
+.homepage > .pagecontent > .welcomesection {
+    width: 100% !important;
+    height: 485px !important;
+    display: flex !important;
+    justify-content: center !important;
+}
+.homepage > .pagecontent > .welcomesection > .greetings {
+    height: 233px !important;
+    display: flex !important;
+    align-items: center !important;
+    color: white !important;
+    font-size: 43px !important;
+    font-weight: 600 !important;
+    line-height: normal !important;
+    text-align: center !important;
+}
+.homepage > .pagecontent > .rmcarouselsection > .crsl {
+    box-shadow: 0px 2.3px 6.9px 0px #000000b0 !important;
+}
+.homepage > .pagecontent > .rmcarouselsection > .crsl > .crslcontainer {
+    background-color: #d5a3a354 !important;
+    backdrop-filter: blur(23px) !important;
+    display: flex !important;
+}
+.homepage > .pagecontent > .rmcarouselsection > .crsl > .crslcontainer > img {
+    width: 566.3px !important;
+    height: 444px !important;
+}
+.homepage > .pagecontent > .rmcarouselsection > .crsl > .crslcontainer > .text {
+    width: 670.7px !important;
+    height: 444px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 23px !important;
+    padding: 33px 66px !important;
+}
+.homepage > .pagecontent > .rmcarouselsection > .crsl > .crslcontainer > .text > .title {
+    width: 100% !important;
+    height: 69px !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    color: white !important;
+    font-size: 33px !important;
+    font-weight: 600 !important;
+    text-transform: capitalize !important;
+    line-height: normal !important;
+}
+.homepage > .pagecontent > .rmcarouselsection > .crsl > .crslcontainer > .text > .description {
+    width: 100% !important;
+    display: flex !important;
+    color: white !important;
+    font-size: 18.23px !important;
+    line-height: normal !important;
+}
+.homepage .crsl .custom-carousel-control {
+    width: 30px !important; 
+    height: 30px !important; 
+    margin-block: auto !important;
+}
+.homepage .crsl .carousel-control-prev {
+    left: 13px !important; 
+}
+.homepage .crsl .carousel-control-next {
+    right: 13px !important; 
+}
+.homepage .crsl .carousel-control-prev-icon,
+.homepage .crsl .carousel-control-next-icon {
+    width: 100% !important;
+    height: 100% !important;
+}
+
+.formpage > .pagecontent {
+    width: 100% !important;
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 33px !important;
+    align-items: center !important;
+    margin-inline: auto !important;
+    padding: 0 13px !important;
+}
+.formpage > .pagecontent > .formsection {
+    background-color: #d8a2a254;
+    backdrop-filter: blur(23px) !important;
+    width: 600px;
+    display: flex;
+    padding: 0 40px 40px;
+    align-items: center;
+    flex-direction: column;
+}
+.formpage > .pagecontent > .formsection > .title {
+    width: 100% !important;
+    height: 69px !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    color: white !important;
+    font-size: 33px !important;
+    font-weight: 600 !important;
+    text-transform: capitalize !important;
+    line-height: normal !important;
+}
+.formpage > .pagecontent > .formsection > .form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.formpage > .pagecontent > .formsection > .form > form {
+    width: 100%;
+    gap: 23px;
+    display: flex;
+    flex-direction: column;
+}
+.formpage > .pagecontent > .formsection > .form > form > .inputboxes {
+    width: 100%;
+    gap: 13px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.formpage > .pagecontent > .formsection > .form > form > .inputboxes > .ninput {
+    width: 164.67px !important;
+}
+.formpage > .pagecontent > .formsection > .form > form > .inputboxes > .einput {
+    width: 253.5px !important;
+}
+.formpage > .pagecontent > .formsection > .form > form > button {
+    background-color: var(--ama-red) !important;
+    color: white !important;
+}
+.formpage > .pagecontent > .formsection > .form > form > button:hover {
+    background-color: white !important;
+    color: var(--ama-red) !important;
+}
+.formpage > .pagecontent > .formsection > .form > form > button:hover,
+.formpage > .pagecontent > .formsection > .form > form > button:not(:hover) {
+    transition: .33s ease-in-out !important;
+}
+
+.reservedlistpage > .pagecontent {
+    width: 100% !important;
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 13px !important;
+    margin-inline: auto !important;
+}
+.reservedlistpage > .pagecontent > .yourreservationsection {
+    background-color: #d5a3a354 !important;
+    backdrop-filter: blur(23px) !important;
+    width: 100% !important;
+    display: flex;
+    flex-direction: column;
+    margin-inline: auto;
+    padding: 0 40px 40px;
+}
+.reservedlistpage > .pagecontent > .yourreservationsection > .title {
+    height: 69px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 33px;
+    font-weight: 600 !important;
+    line-height: normal;
+    text-transform: uppercase;
+    text-align: center;
+}
+.reservedlistpage > .pagecontent > .yourreservationsection > .tb {
+    display: flex;
+    flex-direction: column;
+    align-items: center !important;
+    gap: 6.5px;
+}
+.reservedlistpage > .pagecontent > .yourreservationsection > .tb > .row {
+    background-color: #ffffff3b;
+    width: 100%;
+    height: 41.71px;
+    display: flex;
+}
+.row.lead {
+    font-weight: 900;
+}
+.reservedlistpage > .pagecontent > .yourreservationsection > .tb > .row > .row-col {
+    width: 25%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 18.23px;
+    line-height: normal;
+}
+.reservedlistpage > .pagecontent > .yourreservationsection > .tb > .row > .row-col > form {
+    width: 50% !important;
+    height: 100% !important; 
+}
+.reservedlistpage > .pagecontent > .yourreservationsection > .tb > .row > .row-col > form > button {
+    background-color: var(--ama-red) !important;
+    width: 100% !important;
+    height: 100% !important; 
+    color: white !important;
+}
+.reservedlistpage > .pagecontent > .yourreservationsection > .tb > .row > .row-col > form > button:hover {
+    background-color: white !important;
+    color: var(--ama-red) !important;
+}
+.reservedlistpage > .pagecontent > .yourreservationsection > .tb > .row > .row-col > form > button:hover,
+.reservedlistpage > .pagecontent > .yourreservationsection > .tb > .row > .row-col > form > button:not(:hover) {
+    transition: .33s ease-in-out !important;
+}
+.tb > .row > .row-col > form > input {
+    position: absolute !important;
+    display: none !important;
+}
+
+.selecttimedatepage > .pagecontent {
+    width: 100% !important;
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 13px !important;
+    margin-inline: auto !important;
+}
+.selecttimedatepage > .pagecontent > .selecttimedatesection {
+    background-color: #d5a3a354 !important;
+    backdrop-filter: blur(23px) !important;
+    width: 100% !important;
+    display: flex;
+    flex-direction: column;
+    margin-inline: auto;
+    padding: 0 40px 40px;
+}
+.selecttimedatepage > .pagecontent > .selecttimedatesection > .title {
+    height: 69px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 33px;
+    font-weight: 600 !important;
+    line-height: normal;
+    text-transform: uppercase;
+    text-align: center;
+} 
+.selecttimedatepage > .pagecontent > .selecttimedatesection > form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 33px;
+}
+.selecttimedatepage > .pagecontent > .selecttimedatesection > form > .inputboxes {
+    width: 100%;
+    display: flex;
+    gap: 23px;
+}  
+.selecttimedatepage > .pagecontent > .selecttimedatesection > form > .buttons {
+    width: 300px;
+    display: flex;
+}
+.selecttimedatepage > .pagecontent > .selecttimedatesection > form > .buttons > button {
+    background-color: var(--ama-red) !important;
+    color: white !important;
+}
+.selecttimedatepage > .pagecontent > .selecttimedatesection > form > .buttons > button:hover {
+    background-color: white !important;
+    color: var(--ama-red) !important;
+}
+.selecttimedatepage > .pagecontent > .selecttimedatesection > form > .buttons > button:hover,
+.selecttimedatepage > .pagecontent > .selecttimedatesection > form > .buttons > button:not(:hover) {
+    transition: .33s ease-in-out !important;
+}
+
+.selecttimedatepage > .pagecontent > .roomsreservedsection {
+    background-color: #d5a3a354 !important;
+    backdrop-filter: blur(23px) !important;
+    width: 100% !important;
+    display: flex;
+    flex-direction: column;
+    margin-inline: auto;
+    padding: 0 40px 40px;
+}
+.selecttimedatepage > .pagecontent > .roomsreservedsection > .title {
+    height: 69px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 33px;
+    font-weight: 600 !important;
+    line-height: normal;
+    text-transform: uppercase;
+    text-align: center;
+}
+.selecttimedatepage > .pagecontent > .roomsreservedsection > .tb {
+    display: flex;
+    flex-direction: column;
+    align-items: center !important;
+    gap: 6.5px;
+}
+.selecttimedatepage > .pagecontent > .roomsreservedsection > .tb > .row {
+    background-color: #ffffff3b;
+    width: 100%;
+    height: 41.71px;
+    display: flex;
+}
+.row.lead {
+    font-weight: 900;
+}
+.selecttimedatepage > .pagecontent > .roomsreservedsection > .tb > .row > .row-col {
+    width: 25%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 18.23px;
+    line-height: normal;
+}
+.tb > .row > .row-col > form > input {
+    position: absolute !important;
+    display: none !important;
+}
+
+.selectroompage > .pagecontent {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-inline: auto;
+}
+.selectroompage > .pagecontent > .selectroomsection {
+    background-color: #d5a3a354 !important;
+    backdrop-filter: blur(23px) !important;
+    width: 100% !important;
+    display: flex;
+    flex-direction: column;
+    margin-inline: auto;
+    padding: 0 40px 40px;
+}
+.selectroompage > .pagecontent > .selectroomsection > .title {
+    height: 69px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 33px;
+    font-weight: 600 !important;
+    line-height: normal;
+    text-transform: uppercase;
+    text-align: center;
+}
+.selectroompage > .pagecontent > .selectroomsection > .cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 13px;
+}
+.selectroompage > .pagecontent > .selectroomsection > .cards > .card-room {
+    width: 221px;
+    height: 221px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none !important;
+}
+.selectroompage > .pagecontent > .selectroomsection > .cards > .card-room.available {
+    background-color: white !important;
+}
+.selectroompage > .pagecontent > .selectroomsection > .cards > .card-room.available:hover {
+    background-color: var(--ama-red) !important;
+}
+.selectroompage > .pagecontent > .selectroomsection > .cards > .card-room.available:hover > .details > .title,
+.selectroompage > .pagecontent > .selectroomsection > .cards > .card-room.available:hover > .details > .avail {
+    color: white !important;
+}
+.selectroompage > .pagecontent > .selectroomsection > .cards > .card-room.reserved {
+    background-color: #cccccc !important;
+    cursor: default;
+}
+.selectroompage > .pagecontent > .selectroomsection > .cards > .card-room > img {
+    width: 221px;
+    height: 126px;
+    outline: none !important;
+}
+.selectroompage > .pagecontent > .selectroomsection > .cards > .card-room > .details {
+    width: 100%;
+    height: 94.74px;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    gap: 13px;
+    padding: 7.71px 13px 13px;
+}
+.selectroompage > .pagecontent > .selectroomsection > .cards > .card-room > .details > span {
+    width: 100%;
+    line-height: normal;
+}
+.selectroompage > .pagecontent > .selectroomsection > .cards > .card-room > .details > .title {
+    height: 43px;
+    display: -webkit-box;
+    overflow: hidden;
+    color: var(--ama-red);
+    font-size: 18.23px;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+.selectroompage > .pagecontent > .selectroomsection > .cards > .card-room > .details > .avail {
+    font-size: 15px;
+    font-weight: 700;
+}
+.avail.available {
+    color: #1fd655;
+}
+.avail.reserved {
+    color: #7b7b7b;
+}
+.selectroompage > .pagecontent > .selectroomsection > .cards > .card-room:hover {
+    transition: .33s ease-in-out !important;
+}
+
+.selectroompage > div > div > .mdl-cntnt {
+    border-radius: 0 !important;
+}
+.selectroompage > div > div > .mdl-cntnt > .header > button {
+    box-shadow: none !important;
+}
+/* .selectroompage > div > div > .mdl-cntnt > form > .body > img {
+    width: 466.35px !important;
+    height: 265.9px !important;
+} */
+.selectroompage > div > div > .mdl-cntnt > form > .footer > button {
+    background-color: var(--ama-red) !important;
+    color: white !important;
+}
+.selectroompage > div > div > .mdl-cntnt > form > .footer > button:hover {
+    background-color: white !important;
+    color: var(--ama-red) !important;
+}
+.selectroompage > div > div > .mdl-cntnt > form > .footer > button:hover,
+.selectroompage > div > div > .mdl-cntnt > form > .footer > button:not(:hover) {
+    transition: .33s ease-in-out !important;
+}

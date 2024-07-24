@@ -1,0 +1,756 @@
+:root {
+    --ama-red: #8E0404;
+}
+html,
+body {
+    background-image: url("../../static/assets/bg.png") !important;
+    background-size: cover !important;
+    background-attachment: fixed !important;
+    background-position: center center !important;
+    width: 100%;
+    height: 100%;
+    user-select: none !important;
+    -webkit-user-select: none !important;
+    font-family: Arial, Helvetica, sans-serif !important;
+}
+.cbody {
+    width: 100% !important;
+    height: 100% !important;
+    display: flex !important;
+    flex-direction: column !important;
+}
+input:not(.menuside > input),
+button,
+select {
+    border: none !important;
+    outline: none !important;
+}
+input[type="text"],
+input[type="password"],
+input[type="number"],
+input[type="date"],
+input[type="datetime-local"],
+input[type="email"],
+input[type="month"],
+input[type="search"],
+input[type="tel"],
+input[type="time"],
+input[type="url"],
+input[type="week"],
+select {
+    background-color: #ffffff3b !important;
+    width: 100% !important;
+    height: 43px !important;
+    padding: 0 13px !important;
+    color: white !important;
+    font-size: 15px !important;
+}
+input[disabled] {
+    color: white !important;
+}
+input::placeholder,
+select::placeholder {
+    color: white !important;
+}
+option {
+    color: var(--ama-red);
+}
+button:not(.btn-close):not(.crslbtn),
+input[type="submit"] {
+    width: 100% !important;
+    padding: 13px 0 !important;
+    font-size: 15px !important;
+    text-transform: uppercase !important;
+    line-height: normal !important;
+    text-align: center !important;
+}
+img {
+    pointer-events: none !important;
+}
+
+.MBMOD-HIDE {
+    display: none !important;
+}
+
+main {
+    width: 100%;
+    height: 100%;
+    display: flex !important;
+    flex-direction: column !important;
+}
+.MBMOD-body {
+    align-items: center !important;
+    padding: 13px 0 0;
+}
+.MBMOD-body > .loginpage {
+    width: 100% !important;
+    height: 100% !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
+.loginpage > .loginform {
+    background-color: #d5a3a354 !important;
+    backdrop-filter: blur(23px) !important;
+    width: 100% !important;
+    height: 400px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    padding: 13px !important;
+}
+.loginpage > .loginform > .title {
+    width: 100% !important;
+    display: flex !important;
+    align-items: center !important;
+    gap: 6.5px !important;
+}
+.loginpage > .loginform > .title > img {
+    width: 122.53px !important;
+    height: 39px !important;
+}
+.loginpage > .loginform > .title > span {
+    display: flex !important;
+    color: white !important;
+    font-size: 23px !important;
+    font-family: Impact !important;
+    text-transform: uppercase !important;
+    line-height: normal !important;
+    text-align: center !important;
+}
+.loginpage > .loginform > .form {
+    width: 100% !important;
+    height: 100% !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
+.loginpage > .loginform > .form > form {
+    width: 100% !important;
+    max-width: 300px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 33px !important;
+}
+.loginpage > .loginform > .form > form > .inputboxes {
+    width: 100% !important;
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 23px !important;
+}
+.loginpage > .loginform > .form > form > .button-a {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 23px !important;
+}
+.loginpage > .loginform > .form > form > .button-a > button {
+    background-color: var(--ama-red) !important;
+    color: white !important;
+}
+.loginpage > .loginform > .form > form > .button-a > button:active {
+    background-color: white !important;
+    color: var(--ama-red) !important;
+}
+.loginpage > .loginform > .form > form > .button-a > a {
+    color: white !important;
+    font-size: 15px !important;
+    text-transform: capitalize !important;
+    text-decoration: none !important;
+    line-height: normal !important;
+}
+
+.MBMOD-header {
+    background-color: #8E0404 !important;
+    width: 100% !important;
+    z-index: 100 !important;
+    position: sticky !important;
+    top: 0 !important;
+    box-shadow: 0px 2.3px 6.9px 0px #000000b0 !important;
+}
+.MBMOD-header > .header {
+    max-width: 767px !important;
+    height: 57px !important;
+    display: flex !important;
+    justify-content: space-between !important;
+    margin-right: auto !important;
+    margin-left: auto !important;
+    padding: 9px 13px !important;
+}
+.MBMOD-header > .header > .titleside {
+    display: flex !important;
+    align-items: center !important;
+    user-select: none !important;
+    -webkit-user-select: none !important;
+    pointer-events: none !important;
+    gap: 13px !important;
+}
+.MBMOD-header > .header > .titleside > img {
+    width: 123px !important;
+    height: 39px !important;
+}
+.MBMOD-header > .header > .titleside > span {
+    display: flex !important;
+    color: white !important;
+    font-size: 23px !important;
+    font-family: Impact !important;
+    line-height: normal !important;
+    text-align: center !important;
+}
+.MBMOD-header > .header > .menuside {
+    display: flex !important;
+    align-items: center !important;
+}
+.MBMOD-header > .cllps > .menu {
+    display: flex !important;
+    flex-direction: column !important;
+}
+.MBMOD-header > .cllps > .menu > .menuitem {
+    padding: 11.5px 23px !important;
+}
+.MBMOD-header > .cllps > .menu > .menuitem > a {
+    color: white !important;
+    font-size: 18px !important;
+    line-height: normal !important;
+    text-decoration: none !important;
+}
+
+.MBMOD-footer {
+    background-color: var(--ama-red) !important;
+    width: 100% !important;
+    display: flex !important;
+    margin-top: auto !important;
+    box-shadow: 0px 2.3px 6.9px 0px #000000b0 !important;
+}
+.MBMOD-footer > .footer {
+    background-color: var(--ama-red);
+    max-width: 100% !important;
+    display: flex !important;
+    flex-direction: column !important;
+    margin-inline: auto !important;
+}
+.footer > .abouttheflexsection {
+    width: 100% !important;
+    height: 200px !important;
+    display: flex;
+    flex-direction: column !important;
+    justify-content: center !important;
+    padding: 20px 13px !important;
+}
+.footer > .abouttheflexsection > .title,
+.footer > .abouttheflexsection > .description,
+.footer > .visitpagessection > .title {
+    width: 100% !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center !important;
+    line-height: normal !important;
+}
+.footer > .abouttheflexsection > .title,
+.footer > .visitpagessection > .title {
+    font-size: 23px;
+    font-weight: bold !important;
+}
+.footer > .abouttheflexsection > .title {
+    color: #d0ba2a !important;
+}
+.footer > .abouttheflexsection > .description {
+    margin-block: auto !important;
+    color: white !important;
+    font-size: 15.23px !important;
+    text-align: center !important;
+    line-height: normal !important;
+}
+.footer > .visitpagessection {
+    background-color: white !important;
+    width: 100% !important;
+    display: flex;
+    flex-direction: column !important;
+    justify-content: center !important;
+    padding: 20px 13px !important;
+}
+.footer > .visitpagessection > .title {
+    color: var(--ama-red) !important;
+}
+.footer > .visitpagessection > .pages {
+    width: 100% !important;
+    height: 283px !important;
+    display: flex !important;
+}
+.footer > .rightssection {
+    width: 100% !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: space-between !important;
+    padding: 20px 0 !important;
+    gap: 13px !important;
+}
+.footer > .rightssection > .logoside {
+    width: 100% !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 13px !important;
+}
+.footer > .rightssection > .logoside > .title {
+    display: flex !important;
+    align-items: center !important;
+    gap: 13px !important;
+}
+.footer > .rightssection > .logoside > .title > img {
+    width: 161px;
+    height: 51px;
+}
+.footer > .rightssection > .logoside > .title > span {
+    display: flex !important;
+    color: white !important;
+    font-size: 33px !important;
+    font-family: Impact !important;
+    text-transform: uppercase !important;
+    line-height: normal !important;
+    text-align: center !important;
+}
+.footer > .rightssection > .logoside > span {
+    color: white !important;
+    font-size: 12.23px !important;
+    line-height: normal !important;
+    text-align: center !important;
+}
+.footer > .rightssection > .allrightsside {
+    width: 100% !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 6.5px;
+}
+.footer > .rightssection > .allrightsside > span {
+    color: white !important;
+    font-size: 15.23px;
+    line-height: 120%;
+    text-align: center;
+}
+
+.homepage,
+.selecttimedatepage,
+.selectroompage {
+    gap: 23px !important;
+}
+.homepage > .pagecontent {
+    width: 100% !important;
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 33px !important;
+    margin-inline: auto !important;
+    padding: 0 13px !important;
+}
+.homepage > .pagecontent > .welcomesection {
+    width: 100% !important;
+    height: 808px !important;
+    display: flex !important;
+    justify-content: center !important;
+}
+.homepage > .pagecontent > .welcomesection > .greetings {
+    height: 423px !important;
+    display: flex !important;
+    align-items: center !important;
+    color: white !important;
+    font-size: 43px !important;
+    font-weight: 600 !important;
+    line-height: normal !important;
+    text-align: center !important;
+}
+.homepage > .pagecontent > .rmcarouselsection > .crsl {
+    box-shadow: 0px 2.3px 6.9px 0px #000000b0 !important;
+}
+.homepage > .pagecontent > .rmcarouselsection > .crsl > .crslcontainer {
+    background-color: #d5a3a354 !important;
+    backdrop-filter: blur(23px) !important;
+    display: flex !important;
+    flex-direction: column !important;
+}
+.homepage > .pagecontent > .rmcarouselsection > .crsl > .crslcontainer > img {
+    width: 388px !important;
+    height: 304px !important;
+}
+.homepage > .pagecontent > .rmcarouselsection > .crsl > .crslcontainer > .text {
+    width: 100% !important;
+    height: 444px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 23px !important;
+    padding: 33px 66px !important;
+}
+.homepage > .pagecontent > .rmcarouselsection > .crsl > .crslcontainer > .text > .title {
+    width: 100% !important;
+    height: 55px !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    color: white !important;
+    font-size: 23px !important;
+    font-weight: 600 !important;
+    text-transform: capitalize !important;
+    line-height: normal !important;
+}
+.homepage > .pagecontent > .rmcarouselsection > .crsl > .crslcontainer > .text > .description {
+    width: 100% !important;
+    display: flex !important;
+    color: white !important;
+    font-size: 15px !important;
+    line-height: normal !important;
+}
+.homepage .crsl .custom-carousel-control {
+    width: 30px !important; 
+    height: 30px !important; 
+    margin-block: auto !important;
+}
+.homepage .crsl .carousel-control-prev {
+    left: 13px !important; 
+}
+.homepage .crsl .carousel-control-next {
+    right: 13px !important; 
+}
+.homepage .crsl .carousel-control-prev-icon,
+.homepage .crsl .carousel-control-next-icon {
+    width: 100% !important;
+    height: 100% !important;
+}
+.reservedlistpage > .pagecontent > .yourreservationsection {
+    background-color: #d5a3a354 !important;
+    backdrop-filter: blur(23px) !important;
+    width: 100% !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-inline: auto;
+    padding: 0 13px 23px;
+}
+.reservedlistpage > .pagecontent > .yourreservationsection > .title {
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 23px;
+    font-weight: 600 !important;
+    line-height: normal;
+    text-transform: uppercase;
+    text-align: center;
+}
+.reservedlistpage > .pagecontent > .yourreservationsection > .tb {
+    display: flex;
+    flex-direction: column;
+    align-items: center !important;
+    gap: 6.5px;
+}
+.reservedlistpage > .pagecontent > .yourreservationsection > .tb > .row {
+    background-color: #ffffff3b;
+    width: 100%;
+    display: flex;
+}
+.row.lead {
+    font-weight: 900;
+}
+.reservedlistpage > .pagecontent > .yourreservationsection > .tb > .row > .row-col {
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 13.23px;
+    line-height: normal;
+}
+.row-col.actions {
+    flex-direction: column !important;
+}
+.reservedlistpage > .pagecontent > .yourreservationsection > .tb > .row > .row-col > form {
+    width: 100% !important;
+    height: 100% !important; 
+}
+.reservedlistpage > .pagecontent > .yourreservationsection > .tb > .row > .row-col > form > button {
+    background-color: var(--ama-red) !important;
+    width: 100% !important;
+    height: 100% !important; 
+    color: white !important;
+    font-size: small !important;
+}
+.reservedlistpage > .pagecontent > .yourreservationsection > .tb > .row > .row-col > form > button:active {
+    background-color: white !important;
+    color: var(--ama-red) !important;
+}
+.tb > .row > .row-col > form > input {
+    position: absolute !important;
+    display: none !important;
+}
+
+.selecttimedatepage > .pagecontent {
+    width: 100% !important;
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 13px !important;
+    margin-inline: auto !important;
+    padding: 0 13px !important;
+}
+.selecttimedatepage > .pagecontent > .selecttimedatesection {
+    background-color: #d5a3a354 !important;
+    backdrop-filter: blur(23px) !important;
+    width: 100% !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 13px 23px;
+}
+.selecttimedatepage > .pagecontent > .selecttimedatesection > .title {
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 23px;
+    font-weight: 600 !important;
+    line-height: normal;
+    text-transform: uppercase;
+    text-align: center;
+} 
+.selecttimedatepage > .pagecontent > .selecttimedatesection > form {
+    width: 100%;
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 33px;
+}
+.selecttimedatepage > .pagecontent > .selecttimedatesection > form > .inputboxes {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+}  
+.selecttimedatepage > .pagecontent > .selecttimedatesection > form > .buttons {
+    width: 100%;
+    display: flex;
+}
+.selecttimedatepage > .pagecontent > .selecttimedatesection > form > .buttons > button {
+    background-color: var(--ama-red) !important;
+    color: white !important;
+}
+.selecttimedatepage > .pagecontent > .selecttimedatesection > form > .buttons > button:active {
+    background-color: white !important;
+    color: var(--ama-red) !important;
+}
+.selecttimedatepage > .pagecontent > .roomsreservedsection {
+    background-color: #d5a3a354 !important;
+    backdrop-filter: blur(23px) !important;
+    width: 100% !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-inline: auto;
+    padding: 0 13px 23px;
+}
+.selecttimedatepage > .pagecontent > .roomsreservedsection > .title {
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 23px;
+    font-weight: 600 !important;
+    line-height: normal;
+    text-transform: uppercase;
+    text-align: center;
+}
+.selecttimedatepage > .pagecontent > .roomsreservedsection > .tb {
+    display: flex;
+    flex-direction: column;
+    align-items: center !important;
+    gap: 6.5px;
+}
+.selecttimedatepage > .pagecontent > .roomsreservedsection > .tb > .row {
+    background-color: #ffffff3b;
+    width: 100%;
+    display: flex;
+}
+.row.lead {
+    font-weight: 900;
+}
+.selecttimedatepage > .pagecontent > .roomsreservedsection > .tb > .row > .row-col {
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 13.23px;
+    line-height: normal;
+    text-align: center;
+}
+
+.selectroompage > .pagecontent {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-inline: auto !important;
+    padding: 0 13px !important;
+    align-items: center;
+    flex-direction: column;
+}
+.selectroompage > .pagecontent > .selectroomsection {
+    background-color: #d5a3a354 !important;
+    backdrop-filter: blur(23px) !important;
+    width: 100% !important;
+    display: flex;
+    flex-direction: column;
+    margin-inline: auto;
+    padding: 0 23px 23px;
+}
+.selectroompage > .pagecontent > .selectroomsection > .title {
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 23px;
+    font-weight: 600 !important;
+    line-height: normal;
+    text-transform: uppercase;
+    text-align: center;
+}
+.selectroompage > .pagecontent > .selectroomsection > .cards {
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+}
+.selectroompage > .pagecontent > .selectroomsection > .cards > .card-room {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    text-decoration: none !important;
+}
+.selectroompage > .pagecontent > .selectroomsection > .cards > .card-room.available {
+    background-color: white !important;
+}
+.selectroompage > .pagecontent > .selectroomsection > .cards > .card-room.available:active {
+    background-color: var(--ama-red) !important;
+}
+.selectroompage > .pagecontent > .selectroomsection > .cards > .card-room.available:active > .details > .title,
+.selectroompage > .pagecontent > .selectroomsection > .cards > .card-room.available:active > .details > .avail {
+    color: white !important;
+}
+.selectroompage > .pagecontent > .selectroomsection > .cards > .card-room.reserved {
+    background-color: #cccccc !important;
+    cursor: default;
+}
+.selectroompage > .pagecontent > .selectroomsection > .cards > .card-room > img {
+    width: 134px;
+    height: 76px;
+}  
+.selectroompage > .pagecontent > .selectroomsection > .cards > .card-room > .details {
+    gap: 6.5px;
+    width: 100%;
+    display: flex;
+    padding: 7.71px 13px 13px;
+    align-items: center;
+    flex-direction: column;
+}
+.selectroompage > .pagecontent > .selectroomsection > .cards > .card-room > .details > span {
+    width: 100%;
+    line-height: normal;
+}
+.selectroompage > .pagecontent > .selectroomsection > .cards > .card-room > .details > .title {
+    height: 33px;
+    display: -webkit-box;
+    overflow: hidden;
+    color: var(--ama-red);
+    font-size: 15px;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+.selectroompage > .pagecontent > .selectroomsection > .cards > .card-room > .details > .avail {
+    font-size: 13px;
+    font-weight: 700;
+}
+.avail.available {
+    color: #1fd655;
+}
+.avail.reserved {
+    color: #7b7b7b;
+}
+.selectroompage > div > div > .mdl-cntnt {
+    border-radius: 0 !important;
+}
+.selectroompage > div > div > .mdl-cntnt > .header > button {
+    box-shadow: none !important;
+}
+.selectroompage > div > div > .mdl-cntnt > form > .footer > button {
+    background-color: var(--ama-red) !important;
+    color: white !important;
+}
+  
+
+/* *//* *//* *//* *//* *//* *//* *//* *//* *//* *//* *//* *//* *//* *//* *//* *//* */
+/* DO NOT TOUCH OR MODIFY */
+
+.MBMOD-header > .header > .menuside > input {
+    --s: 31px;
+    /* control the size */
+    --c: white;
+    /* the color */
+
+    height: var(--s);
+    aspect-ratio: 1;
+    border: none;
+    padding: 0;
+    border-inline: calc(var(--s)/2) solid #0000;
+    box-sizing: content-box;
+    --_g1: linear-gradient(var(--c) 20%, #0000 0 80%, var(--c) 0) no-repeat content-box border-box;
+    --_g2: radial-gradient(circle closest-side at 50% 12.5%, var(--c) 95%, #0000) repeat-y content-box border-box;
+    background:
+        var(--_g2) left var(--_p, 0px) top,
+        var(--_g1) left calc(var(--s)/10 + var(--_p, 0px)) top,
+        var(--_g2) right var(--_p, 0px) top,
+        var(--_g1) right calc(var(--s)/10 + var(--_p, 0px)) top;
+    background-size:
+        20% 80%,
+        40% 100%;
+    position: relative;
+    clip-path: inset(0 25%);
+    -webkit-mask: linear-gradient(90deg, #0000, #000 25% 75%, #0000);
+    cursor: pointer;
+    transition:
+        background-position .3s var(--_s, .3s),
+        clip-path 0s var(--_s, .6s);
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+.MBMOD-header > .header > .menuside > input:before,
+.MBMOD-header > .header > .menuside > input:after {
+    content: "";
+    position: absolute;
+    border-radius: var(--s);
+    inset: 40% 0;
+    background: var(--c);
+    transition: transform .3s calc(.3s - var(--_s, .3s));
+}
+.MBMOD-header > .header > .menuside > input:checked {
+    clip-path: inset(0);
+    --_p: calc(-1*var(--s));
+    --_s: 0s;
+}
+.MBMOD-header > .header > .menuside > input:checked:before {
+    transform: rotate(45deg);
+}
+.MBMOD-header > .header > .menuside > input:checked:after {
+    transform: rotate(-45deg);
+}
+.MBMOD-header > .header > .menuside > input:focus-visible {
+    clip-path: none;
+    border: none;
+    outline: 2px solid var(--c);
+    outline-offset: 5px;
+}
+
+/* *//* *//* *//* *//* *//* *//* *//* *//* *//* *//* *//* *//* *//* *//* *//* *//* */
